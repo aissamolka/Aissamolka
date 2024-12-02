@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AissaMolkaMoto - Voitures & Motos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">AissaMolkaMoto</div>
+            <form class="search-form">
+            <input type="text" id="searchBar" placeholder="Rechercher un produit..." />
+            <button type="button" id="searchBtn">Rechercher...</button>
+            </form>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">Présentation</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count">0</span>
+        </div>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue chez AissaMolkaMoto</h1>
+            <p>Votre destination ultime pour les voitures & motos</p>
+            <a href="#products" class="btn">Acheter maintenant</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>À propos de nous:</h2>
+        <p>Chez AissaMolkaMoto, nous sommes passionnés par les véhicules de luxe et sportifs. Nous vous proposons une sélection de voitures et motos haut de gamme qui répondent à toutes vos attentes.</p>
+        <div class="add-image">
+        <input type="text" id="imageUrl" placeholder="Entrez l'URL de l'image">
+        <button id="addBtn">Ajouter</button>
+    </div>
+        <div class="gallery">
+    <img id="currentImage" src="" alt="Galerie d'images">
+    <div class="navigation">
+        <button id="prevBtn">Précédent</button>
+        <button id="nextBtn">Suivant</button>
+    </div>
+    <p id="imageCount"></p>
+</div>
+    </section>
+    <section id="products" class="featured">
+    <h2>Nos Produits Vedettes</h2>
+    <div class="filter">
+        <label for="productFilter">Filtrer par catégorie :</label>
+        <select id="productFilter">
+            <option value="all">Tous</option>
+            <option value="Voiture">Voiture</option>
+            <option value="Moto">Moto</option>
+        </select>
+        <div class="product-grid">
+                <div class="product-card" data-category="Voiture">
+                <img src="a.jpg" alt="Voiture" class="product-image">
+                <h3>Mercedes G-Wagon</h3>
+                <p>À partir de 100 000€</p>
+                <button class="buy-btn">Acheter</button>
+            </div>
+            <div class="product-card" data-category="Moto">
+                <img src="b.jpg" alt="Moto" class="product-image">
+                <h3>R9 yamaha</h3>
+                <p>À partir de 5 000€</p>
+                <button class="buy-btn">Acheter</button>
+            </div>
+            <div class="product-card" data-category="Voiture">
+                <img src="v.jpg" alt="Voiture" class="product-image">
+                <h3>Toyoyta</h3>
+                <p>À partir de 30 000€</p>
+                <button class="buy-btn">Acheter</button>
+            </div>
+            <div class="product-card" data-category="Voiture">
+                <img src="d.png" alt="Voiture" class="product-image">
+                <h3>Challenger Demon</h3>
+                <p>À partir de 300 000€</p>
+                <button class="buy-btn">Acheter</button>
+            </div>
+            <div class="product-card" data-category="Moto">
+                <img src="j.png" alt="Moto" class="product-image">
+                <h3>Moto cross</h3>
+                <p>À partir de 5 000€</p>
+                <button class="buy-btn">Acheter</button>
+            </div>
+            <div class="product-card" data-category="Voiture">
+                <img src="m.png" alt="Voiture" class="product-image">
+                <h3>Bmw F82</h3>
+                <p>À partir de 350 000€</p>
+                <button class="buy-btn">Acheter</button>
+            </div>
+            <div class="product-card" data-category="Moto">
+                <img src="r.png" alt="Moto" class="product-image">
+                <h3>R6 Yamaha</h3>
+                <p>À partir de 10 000€</p>
+                <button class="buy-btn">Acheter</button>
+            </div>
+            <div class="product-card" data-category="Moto">
+                <img src="n.jpg" alt="Moto" class="product-image">
+                <h3>Kawasaki ninja</h3>
+                <p>À partir de 15 000€</p>
+                <button class="buy-btn">Acheter</button>
+            </div>
+            <div class="product-card" data-category="Voiture">
+                <img src="s.png" alt="Voiture" class="product-image">
+                <h3>Dodge Hellcat</h3>
+                <p>À partir de 320 000€</p>
+                <button class="buy-btn">Acheter</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <section>
+            <video controls width="700" height="500" autoplay>
+            <source src="contact.mp4" type="video/mp4">
+            </video>
+            </section>
+           
+            <form action="/ma-page-de-traitement" method="post">
+  <ul>
+    <li>
+      <label for="name">Nom&nbsp;:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <li>
+      <label for="mail">E-mail&nbsp;:</label>
+      <input type="email" id="mail" name="user_mail" />
+    </li>
+    <li>
+      <label for="msg">Message&nbsp;:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </li>
+  </ul>
+</form>
+        <h2>Contactez-nous</h2>
+        <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter par email ou sur nos réseaux sociaux.</p>
+        <ul>
+            <li>Email: contact@aissamolkamoto.com</li>
+            <li>Instagram: @aissamolkamoto</li>
+            <li>Facebook: AissaMolkaMoto</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 AissaMolkaMoto. Tous droits réservés.</p>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>
